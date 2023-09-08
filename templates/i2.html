@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{{ url_for('static',filename='style2.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookhabits</title>
+</head>
+<body>
+    <header>
+        <h4>Book Brew.</h4>
+        
+    </header>
+    <div class="row">
+        <div class="column">
+          
+          <img src="{{ url_for('static',filename='c.gif') }}" alt="c" style="width:100%">
+        </div>
+        <div class="column">
+          
+          <img src="{{ url_for('static',filename='d.gif') }}" alt="b" height="80%" width="100%" >
+        </div>
+        <div class="column">
+          
+          <img src="{{ url_for('static',filename='b.gif') }}" alt="d" style="width:100%">
+        </div>
+      </div>
+<div class="card">
+    </br>
+    <p><h3>2.) How much time do you spend for book reading?</h3></p>
+    <a href="{{ 'i3' }}"> <center><button class="btn1">One Day
+    </button></center>
+    <center><button class="btn2">2-3 days
+    </button></center>
+    <center><button class="btn3">A Week
+    </button></center>
+    <center><button class="btn4">A lot of time
+    </button></center></a>
+</div>
+</body>
+</html>

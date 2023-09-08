@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>BookRecommend</title>
+</head>
+<body>
+    <form action="/survey">
+        <h4>Not Satisfied With Results </h4>
+        <input type="submit" value="Click Here">
+    </form>    
+    {% if suggest %} 
+    {% if k==1 %} 
+    <h3 style="text-align:center">Showing Results For "{{title}}"</h3>
+    {% else %} 
+    <h3 style="text-align:center">0 Results For "{{title}}"</h3><br />
+    <h4 style="text-align:center">Top Rated Books</h4>
+    {% endif %}
+        {% for i in suggest %}    
+    <span><img src="{{i}}" height="250px" width="250px" /></span>
+        
+     
+       
+        {% endfor %}
+        {% endif %}
+    
+</body>
+</html>

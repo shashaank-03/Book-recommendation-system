@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style2.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age</title>
+</head>
+<body>
+    <header>
+        <h4>Book Brew.</h4>
+        
+    </header>
+    <div class="imgs">
+        <center> 
+            <img src="{{ url_for('static',filename='f.jpg') }}" alt="f" width="80%" height="400"></center> 
+      </div>
+<div class="card">
+    </br>
+    <p><h3>3.) Can I know your age?</h3></p>
+   <a href="{{ 'a' }}"> <center><button class="btn1">Below 14 years
+    </button></center>
+    <center><button class="btn2">14-18 years
+    </button></center>
+    <center><button class="btn3">18-24 years
+    </button></center>
+    <center><button class="btn4">24+ years
+    </button></center></a>
+</div>
+</body>
+</html>
